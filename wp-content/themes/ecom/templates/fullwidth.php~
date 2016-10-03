@@ -1,0 +1,132 @@
+<?php
+/**
+ * Template Name: Full Width Page
+ *
+ * @package WordPress
+ * @subpackage Kute Theme
+ * @since KuteTheme 1.0
+ */
+ get_header();?>
+    <div id="primary" class="content-area">
+    	<main id="main" class="site-main">
+    	<?php
+    	// Start the loop.
+    	while ( have_posts() ) : the_post();
+            ?>
+            <div class="main-content"><?php the_content( );?></div>
+            <?php
+    	// End the loop.
+    	endwhile;
+    	?>
+    	<?php 
+    	
+    	if(is_page('home')) {
+    	
+    	?>
+<div id="slider" style="background: #f2f0f0; margin-top: 0px;" class="slider">
+	<div class="container" style="padding-top: 100px;">
+	<div u=caption t="*" class="captionOrange theme-color title-message-holder" style="width:65%;position:absolute; top:120px; font-family: Raleway-light; padding-left: 15px;"> 
+                <span class="animate-plus title-message" data-animations="bounceIn,shake,fadeOutRight,fadeIn">"Qatar’s leading One-Stop-Shop for Global Recruitment!"</span>
+                </div>
+		<div class="slider_wrapper">
+    <div id="slider1_container" style="position: relative; margin-top: 10px;top: 0px; left: 0px; width: 1024px; height: 363px; overflow: hidden; ">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px;width: 1024px;height:363px;">
+            </div>
+            <div style="position: absolute; display: block; background: url(images/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 1024px;height:363px;">
+            </div>
+        </div>
+        
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1024px; height: 363px; overflow: hidden;">
+            
+            <div>
+                <img u="image" src="images/slider_image1.png" />
+                <div u=caption t="*" class="captionOrange theme-color slider-message"  style="width: auto;background-color:rgba(255,255,255,0.5);position:absolute; font-family: Raleway-light;"> 
+                Welcome to Staff Source International
+                </div>
+            </div>
+            <div>
+                <img u="image" src="images/slider_image2.png" />
+                <div u=caption t="*" class="captionOrange theme-color slider-message"  style="width:auto;background-color:rgba(255,255,255,0.5);position:absolute; font-family: Raleway-light;"> 
+                We Focus On Recruitment
+                </div>
+            </div>
+			 <div>
+                <img u="image" src="images/slider_image3.png" />
+                <div u=caption t="*" class="captionOrange theme-color slider-message"  style="width:auto;background-color:rgba(255,255,255,0.5);position:absolute; font-family: Raleway-light;"> 
+                We Are Confident in Our Services
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+                filter: alpha(opacity=70);
+                opacity: .7;
+                overflow: hidden;
+                cursor: pointer;
+                border: #000 1px solid;
+            }
+
+            .jssorb01 div {
+                background-color: gray;
+            }
+
+                .jssorb01 div:hover, .jssorb01 .av:hover {
+                    background-color: #d3d3d3;
+                }
+
+            .jssorb01 .av {
+                background-color: #fff;
+            }
+
+            .jssorb01 .dn, .jssorb01 .dn:hover {
+                background-color: #555555;
+            }
+        </style>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb01" style="position: absolute; bottom: 16px; right: 10px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>
+        </div>
+        <!-- Bullet Navigator Skin End -->
+        
+        <!-- Arrow Navigator Skin Begin -->
+        <style>
+            
+            .jssora02l, .jssora02r, .jssora02ldn, .jssora02rdn
+            {
+                position: absolute;
+                cursor: pointer;
+                display: block;
+                background: url(images/a02.png) no-repeat;
+                overflow:hidden;
+            }
+            .jssora02l { background-position: -3px -33px; }
+            .jssora02r { background-position: -63px -33px; }
+            .jssora02l:hover { background-position: -123px -33px; }
+            .jssora02r:hover { background-position: -183px -33px; }
+            .jssora02ldn { background-position: -243px -33px; }
+            .jssora02rdn { background-position: -303px -33px; }
+        </style>
+        
+        
+    </div>
+    <!-- Slider End -->
+    <div class="slider_shadow"></div>
+	</div>
+</div>
+</div>
+
+    	<?php
+    	}    	
+    	?>
+    	</main><!-- .site-main -->
+    </div><!-- .content-area -->
+<?php 
+get_footer(); ?>
